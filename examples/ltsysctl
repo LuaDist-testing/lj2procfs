@@ -1,13 +1,13 @@
 #!/usr/bin/env luajit
 
-package.path = "../?.lua"
+--package.path = "../?.lua"
 
 --[[
 	get_sysinfo.lua
 
 	Retrieve stuff from the /proc/sys/* directory
 	Specify a path to a file, starting with the part
-	after '/procfs/sys', 
+	after '/sys', 
 
 	$ ./get_sysinfo.lua kernel/panic
 	
@@ -29,10 +29,8 @@ if not sutil.startswith(path,"sys") then
 	path = "sys"..sep..path
 end
 
-
 -- The segments can be separated with either a '.' 
 -- or '/'
-print("path: ", path)
 local segments = sutil.tsplit(path, "[%./]")
 
 local node = procfs;

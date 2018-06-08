@@ -1,21 +1,13 @@
--- This file was automatically generated for the LuaDist project.
-
  package = "lj2procfs"
- version = "0.1-5"
--- LuaDist source
-source = {
-  tag = "0.1-5",
-  url = "git://github.com/LuaDist-testing/lj2procfs.git"
-}
--- Original source
---  source = {
---     url = "https://github.com/wiladams/lj2procfs/archive/v0.1-5.tar.gz",
---     dir = "lj2procfs-0.1-5",
---  }
+ version = "0.1-6"
+ source = {
+    url = "https://github.com/wiladams/lj2procfs/archive/v0.1-6.tar.gz",
+    dir = "lj2procfs-0.1-6",
+ }
  description = {
     summary = "LuaJIT access to the Linux procfs",
     detailed = [[
-       This module gives you ready access to the procfs file system on Linux.  
+       LuaJIT based access to the procfs file system on Linux.  
        This is for Linux ONLY!
     ]],
     homepage = "http://github.com/wiladams/lj2procfs",
@@ -36,11 +28,8 @@ source = {
       ["lj2procfs.fs-util"] = "lj2procfs/fs-util.lua",
       ["lj2procfs.fun"] = "lj2procfs/fun.lua",
       ["lj2procfs.libc"] = "lj2procfs/libc.lua",
-      ["lj2procfs.platform"] = "lj2procfs/platform.lua",
       ["lj2procfs.print-util"] = "lj2procfs/print-util.lua",
-      ["lj2procfs.siginfo"] = "lj2procfs/siginfo.lua",
       ["lj2procfs.string-util"] = "lj2procfs/string-util.lua",
-      ["lj2procfs.striter"] = "lj2procfs/striter.lua",
 
       -- The guts
       ["lj2procfs.Decoders"] = "lj2procfs/Decoders.lua",
@@ -53,6 +42,7 @@ source = {
       ["lj2procfs.codecs.cmdline"] = "lj2procfs/codecs/cmdline.lua",
       ["lj2procfs.codecs.cpuinfo"] = "lj2procfs/codecs/cpuinfo.lua",
       ["lj2procfs.codecs.crypto"] = "lj2procfs/codecs/crypto.lua",
+      ["lj2procfs.codecs.devices"] = "lj2procfs/codecs/devices.lua",
       ["lj2procfs.codecs.diskstats"] = "lj2procfs/codecs/diskstats.lua",
       ["lj2procfs.codecs.interrupts"] = "lj2procfs/codecs/interrupts.lua",
       ["lj2procfs.codecs.iomem"] = "lj2procfs/codecs/iomem.lua",
@@ -64,11 +54,12 @@ source = {
       ["lj2procfs.codecs.net"] = "lj2procfs/codecs/net.lua",
       ["lj2procfs.codecs.partitions"] = "lj2procfs/codecs/partitions.lua",
       ["lj2procfs.codecs.softirqs"] = "lj2procfs/codecs/softirqs.lua",
+      ["lj2procfs.codecs.stat"] = "lj2procfs/codecs/stat.lua",
       ["lj2procfs.codecs.sys"] = "lj2procfs/codecs/sys.lua",
       ["lj2procfs.codecs.uptime"] = "lj2procfs/codecs/uptime.lua",
       ["lj2procfs.codecs.vmstat"] = "lj2procfs/codecs/vmstat.lua",
 
-      -- codecs for flat files in /proc/process
+      -- codecs for flat files in /proc/[PID]
       ["lj2procfs.codecs.process.environ"] = "lj2procfs/codecs/process/environ.lua",
       ["lj2procfs.codecs.process.exe"] = "lj2procfs/codecs/process/exe.lua",
       ["lj2procfs.codecs.process.io"] = "lj2procfs/codecs/process/io.lua",
