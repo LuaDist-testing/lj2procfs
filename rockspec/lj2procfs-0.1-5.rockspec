@@ -1,17 +1,9 @@
--- This file was automatically generated for the LuaDist project.
-
  package = "lj2procfs"
- version = "0.1-4"
--- LuaDist source
-source = {
-  tag = "0.1-4",
-  url = "git://github.com/LuaDist-testing/lj2procfs.git"
-}
--- Original source
---  source = {
---     url = "https://github.com/wiladams/lj2procfs/archive/v0.1-4.tar.gz",
---     dir = "lj2procfs-0.1-4",
---  }
+ version = "0.1-5"
+ source = {
+    url = "https://github.com/wiladams/lj2procfs/archive/v0.1-5.tar.gz",
+    dir = "lj2procfs-0.1-5",
+ }
  description = {
     summary = "LuaJIT access to the Linux procfs",
     detailed = [[
@@ -33,7 +25,6 @@ source = {
 
     modules = {
       -- general programming goodness
-      ["lj2procfs.dirent-util"] = "lj2procfs/dirent-util.lua",
       ["lj2procfs.fs-util"] = "lj2procfs/fs-util.lua",
       ["lj2procfs.fun"] = "lj2procfs/fun.lua",
       ["lj2procfs.libc"] = "lj2procfs/libc.lua",
